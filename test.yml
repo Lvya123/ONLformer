@@ -1,0 +1,24 @@
+###############
+GPU: [0]
+
+MODEL:
+  NAME: UNet
+  MODE: small_baseline   #
+  ARGS:
+    inp_channels: 3
+    out_channels: 3
+    channel: 48
+    win_size: [32,32,32]
+    heads: [1,2,4]
+    depth: [4,4,16]
+    bias: false
+
+
+VAL:  
+  PRETRAIN_MODEL: model_epoch_2400.pth       ## pretrain_model: latested or epoch_num
+  VAL_PS:  ~             ## patchsize of val
+  SAVE_IMG: false
+
+PATH:
+  VAL_DATASET:  '/media/ubutu/755546c0-dea6-4996-b0a4-510af8d67bde/GOPRO/test'
+
