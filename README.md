@@ -32,4 +32,4 @@ Then run:
 python test.py
 ```
 
-The deraining results will be saved in the `logs` folder.
+The restored results will be saved in the `logs` folder.
